@@ -1,0 +1,395 @@
+
+* {
+    /*box sizing set to border box to make padding and border included in width and height*/
+    box-sizing: border-box;
+    /*Remove default block margin - if I don't do this each browser inserts a gap at the top of header*/
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0em;
+    padding-top: 0px;
+    background-color: #EEEEEE;
+}
+
+header {
+    padding-top: 0px;
+    min-height: 200px;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f2f2f2;
+}
+
+
+/*Styling for Page Heading - Used as Site Logo*/
+
+h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-size: 55px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #F6571F;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    position: sticky;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    overflow: hidden;
+    background-color: #313841;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.first-link {
+    margin-left: 15%;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    /*Margin left + padding must = 30px to align with page title*/
+    margin-left: 14px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav a.active {
+    background-color: #4CAF50;
+    color: gray;
+}
+
+.current {
+    text-decoration: underline #ddd;
+    /*Push underline down by 3 px - note this does not pass CSS validator but the code works*/
+    text-underline-offset: 3px;
+}
+
+section {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 16px;
+    padding: 2em;
+    margin: 2rem auto 0 auto;
+    max-width: 800px;
+    padding: 1em;
+    border-style: none;
+}
+
+#submitbutton:hover {
+    background: gray;
+}
+
+label {
+    padding: 0.3em 0.6em 0.5em 0;
+    color: #F6571F;
+}
+
+input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+}
+
+form textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.errorMessage {
+    color: rgb(121, 0, 0);
+    text-decoration: italic;
+}
+
+#loginA {
+    width: 550px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: #eeeeee;
+    position: sticky;
+    top: 0;
+}
+
+#loginFormA {
+    margin-top: 15px;
+    margin-bottom: auto;
+    margin-left: -100px;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#login {
+    width: 400px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: 25%;
+    background-color: #313841;
+    position: sticky;
+    top: 0;
+}
+
+#loginForm {
+    position: relative;
+    margin-top: -48px;
+    margin-right: 0px;
+    padding-left: 100px;
+    padding-top: 15px;
+    margin-bottom: auto;
+    background-color: 0%;
+}
+
+#loginForm p {
+    display: inline;
+    color: #f2f2f2;
+    padding-right: 20px;
+}
+
+footer a {
+    margin-left: auto;
+    margin-right: auto;
+    color: #f2f2f2;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#usernameInput {
+    float: left;
+}
+
+#passwordInput {
+    float: left;
+}
+
+#login input {
+    width: 150px;
+    height: 10px;
+}
+
+footer p {
+    color: #F6571F;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+#logError {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ff3a65;
+    -webkit-text-stroke: 0.4px rgb(22, 53, 18);
+    -webkit-text-fill-color: #313841;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+.container {
+    height: 100px;
+  position: relative;
+}
+
+.horizontal-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#login a {
+    display:block;
+    color: #f2f2f2;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://s3856827-a3-bucket.s3.us-east-1.amazonaws.com/f1car.PNG");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#loginButton{
+    position: absolute;
+    margin-top: -1px;
+    margin-left: 10px;
+    width: 80px;
+    height: 38px;
+}
+#registerButtonLink{
+    position: absolute;
+    margin-left: 110px;
+    padding-left: 10px;
+    margin-top: -2px;
+    width: 80px;
+    height: 38px;
+}
+
+#registerButton{
+    width: 80px;
+    
+}
+
+#homepageLink {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#homepageLink a {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.NextRace {
+    grid-area: NextRace;
+    width: 400px;
+}
+
+.RaceTime {
+    grid-area: RaceTime;
+}
+
+.DriverPic {
+    grid-area: DriverPic;
+    height: 300px;
+    width: 300px;
+}
+
+.LastRace {
+    grid-area: LastRace;
+}
+
+.DriverStandings {
+    grid-area: DriverStandings;
+    length: 400px;
+}
+
+.grid-container {
+    display: grid;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas:
+    'NextRace NextRace RaceTime RaceTime'
+    'DriverPic LastRace LastRace LastRace'
+    'DriverStandings DriverStandings DriverStandings DriverStandings';
+    grid-gap: 10px;
+    background-color: #313841;
+    padding: 10px;
+}
+.grid-container > div {
+  text-align: center;
+  background-color: #EEEEEE;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+#driverPic {
+    width: 300px;
+    height: 300px;
+    display:block;
+    margin:auto;
+}
+
+th, td {
+  padding: 2px;
+  font-size: 15px;
+}
+
+.tableHeading {
+        text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ff3a65;
+    -webkit-text-stroke: 0.4px rgb(22, 53, 18);
+    -webkit-text-fill-color: #E0610E;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+}
+
+#driver {
+    width:100%;
+    height: 50px;
+}
+
+#raceDate {
+    font-size: 30px;
+}
+
+#skinnyf1 {
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
